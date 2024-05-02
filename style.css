@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:300,500,600");
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.headline {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 19.36px;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.category-cantainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+}
+
+.category {
+  width: 100px;
+  height: 20px;
+  font-weight: 600;
+  font-family: Inter;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.active {
+  color: #f2f2f2;
+  background-color: black;
+}
+
+.product-card {
+  display: flex;
+  gap: 6px;
+}
+
+.badge-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 45px;
+  height: 12px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 0.3rem;
+  border-radius: 1px;
+  padding: 2px 4px 2px 4px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.card {
+  /* flex-basis: 88px; */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-image {
+  width: 88px;
+}
+
+.card-image-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  height: 15px;
+  width: 88px;
+}
+.card-content .card-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.card-vendor {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 0.4rem;
+}
+
+.price-content {
+  display: flex;
+  gap: 5px;
+}
+
+.price-content .card-price {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 0.4rem;
+}
+
+.card-compare-at-price {
+  font-weight: 600;
+  font-size: 0.4rem;
+  color: rgba(143, 143, 143, 1);
+}
+
+.card-discount {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 0.4rem;
+  color: rgba(255, 55, 55, 1);
+}
+
+.add-to-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 1);
+  font-family: Inter;
+  font-size: 0.4rem;
+  font-weight: 600;
+  color: #f2f2f2;
+}
+
+/* Media query for screens up to 767px */
+@media (max-width: 767px) {
+  .headline {
+    font-size: 1rem;
+  }
+  .category {
+    font-size: 0.5rem;
+  }
+  .card-image-container {
+    height: 120px;
+  }
+  .card-image {
+    width: 108px;
+  }
+  .card-content {
+    width: 108px;
+  }
+  .card-content .card-title {
+    font-size: 0.5rem;
+  }
+  .card-vendor {
+    font-size: 0.4rem;
+  }
+  .price-content .card-price {
+    font-size: 0.4rem;
+  }
+  .card-compare-at-price {
+    font-size: 0.4rem;
+  }
+  .card-discount {
+    font-size: 0.4rem;
+  }
+  .add-to-card {
+    font-size: 0.4rem;
+    height: 15px;
+  }
+  .badge-text {
+    font-size: 0.3rem;
+  }
+}
+
+/* Media query for screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .headline {
+    font-size: 1.5rem;
+  }
+  .category {
+    font-size: 0.6rem;
+  }
+  .card-image-container {
+    height: 150px;
+  }
+  .card-image {
+    width: 138px;
+  }
+  .card-content {
+    width: 138px;
+  }
+  .card-content .card-title {
+    font-size: 1rem;
+  }
+  .card-vendor {
+    font-size: 0.8rem;
+  }
+  .price-content .card-price {
+    font-size: 0.8rem;
+  }
+  .card-compare-at-price {
+    font-size: 0.8rem;
+  }
+  .card-discount {
+    font-size: 0.8rem;
+  }
+  .add-to-card {
+    font-size: 0.6rem;
+    height: 20px;
+  }
+  .badge-text {
+    font-size: 0.6rem;
+    width: 80px;
+    height: 20px;
+  }
+}
+
+/* Media query for screens above 1025px */
+@media (min-width: 1025px) {
+  .headline {
+    font-size: 2rem;
+  }
+  .category {
+    font-size: 0.8rem;
+  }
+  .card-image-container {
+    height: 170px;
+  }
+  .card-image {
+    width: 158px;
+  }
+  .card-content {
+    width: 158px;
+  }
+  .card-content .card-title {
+    font-size: 0.8rem;
+  }
+  .card-vendor {
+    font-size: 0.8rem;
+  }
+  .price-content .card-price {
+    font-size: 0.8rem;
+  }
+  .card-compare-at-price {
+    font-size: 0.8rem;
+  }
+  .card-discount {
+    font-size: 0.8rem;
+  }
+  .add-to-card {
+    font-size: 0.6rem;
+    height: 25px;
+  }
+  .badge-text {
+    font-size: 0.6rem;
+    width: 80px;
+    height: 20px;
+  }
+}
