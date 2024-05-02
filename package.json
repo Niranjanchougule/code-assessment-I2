@@ -1,0 +1,23 @@
+{
+  "name": "coding-assessment-l2-boilerplate-code-main",
+  "version": "1.0.0",
+  "description": "Welcome to the coding assessment l2. We are excited to see your skills in action. Please follow the instructions below to submit your solution.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niranjanchougule/code-assessment-I2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Niranjanchougule/code-assessment-I2/issues"
+  },
+  "homepage": "https://github.com/Niranjanchougule/code-assessment-I2#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
